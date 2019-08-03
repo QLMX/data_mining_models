@@ -92,6 +92,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train)):
     feature_importance_df = pd.concat([feature_importance_df, fold_importance_df], axis=0)
 
     test_pred_prob += clf.predict(xgb.DMatrix(test), ntree_limit=clf.best_ntree_limit) / folds.n_splits
+result = np.argmax(test_pred_prob, axis=1)
 
 
 ## plot feature importance

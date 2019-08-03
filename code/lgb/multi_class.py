@@ -93,7 +93,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train)):
     feature_importance_df = pd.concat([feature_importance_df, fold_importance_df], axis=0)
 
     test_pred_prob += clf.predict(test[features], num_iteration=clf.best_iteration) / folds.n_splits
-result = np.max(test_pred_prob, axis=1)
+result = np.argmax(test_pred_prob, axis=1)
 
 ## plot feature importance
 cols = (feature_importance_df[["Feature", "importance"]].groupby("Feature").mean().sort_values(by="importance", ascending=False).index)
