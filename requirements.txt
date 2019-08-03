@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+sklearn
+tensorflow==1.12.0
+keras==2.2.4
+seaborn
+lightgbm==2.2.1
+xgboost==0.90
