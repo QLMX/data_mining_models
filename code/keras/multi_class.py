@@ -6,7 +6,7 @@
 @contact: wenruichn@gmail.com
 @time: 2019-08-01 15:28
 公众号：AI成长社
-知乎：https://www.zhihu.com/people/qlmx-61/activities
+知乎：https://www.zhihu.com/people/qlmx-61/columns
 """
 import pandas as pd
 import numpy as np
@@ -45,7 +45,7 @@ data.drop(cate_feature,axis=1,inplace=True)
 train = data[data['label'] != -1]
 test = data[data['label'] == -1]
 
-#del dataframe
+##Clean up the memory
 del data, train_data, test_data
 gc.collect()
 
@@ -62,8 +62,8 @@ test = test[features]
 for i in train_x.columns:
     # print(i, train_x[i].isnull().sum(), test[i].isnull().sum())
     if train_x[i].isnull().sum() != 0:
-        train_x[i].fillna(0, inplace=True)
-        test[i].fillna(0, inplace=True)
+        train_x[i].fillna(-1, inplace=True)
+        test[i].fillna(-1, inplace=True)
 
 ## normalized
 scaler = StandardScaler()
@@ -75,7 +75,7 @@ y_categorical = to_categorical(train_y)
 
 ## simple mlp model
 K.clear_session()
-def build_model(dropout_rate=0.25, activation='relu'):
+def MLP(dropout_rate=0.25, activation='relu'):
     start_neurons = 512
     model = Sequential()
     model.add(Dense(start_neurons, input_dim=train_X.shape[1], activation=activation))
@@ -139,7 +139,7 @@ for fold_, (trn_, val_) in enumerate(folds.split(train_x)):
     x_valid, y_valid = train_X[val_], y_categorical[val_]
 
 
-    model = build_model(dropout_rate=0.5, activation='relu')
+    model = MLP(dropout_rate=0.5, activation='relu')
     model.compile(optimizer='adam', loss='categorical_crossentropy',  metrics=['accuracy'])
     history = model.fit(x_train, y_train,
                         validation_data=[x_valid, y_valid],

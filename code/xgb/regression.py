@@ -6,7 +6,7 @@
 @contact: wenruichn@gmail.com
 @time: 2019-08-01 01:33
 公众号：AI成长社
-知乎：https://www.zhihu.com/people/qlmx-61/activities
+知乎：https://www.zhihu.com/people/qlmx-61/columns
 """
 import pandas as pd
 import numpy as np
@@ -37,7 +37,7 @@ data.drop(cate_feature,axis=1,inplace=True)
 train = data[data['label'] != -1]
 test = data[data['label'] == -1]
 
-#del dataframe
+##Clean up the memory
 del data, train_data, test_data
 gc.collect()
 

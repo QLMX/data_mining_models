@@ -6,7 +6,7 @@
 @contact: wenruichn@gmail.com
 @time: 2019-07-31 22:00
 公众号：AI成长社
-知乎：https://www.zhihu.com/people/qlmx-61/activities
+知乎：https://www.zhihu.com/people/qlmx-61/columns
 """
 import pandas as pd
 import numpy as np

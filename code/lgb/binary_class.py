@@ -6,7 +6,7 @@
 @contact: wenruichn@gmail.com
 @time: 2019-08-01 00:44
 公众号：AI成长社
-知乎：https://www.zhihu.com/people/qlmx-61/activities
+知乎：https://www.zhihu.com/people/qlmx-61/columns
 """
 import pandas as pd
 import numpy as np
@@ -32,7 +32,7 @@ for item in cate_feature:
 train = data[data['label'] != -1]
 test = data[data['label'] == -1]
 
-## Clean up the memory
+##Clean up the memory
 del data, train_data, test_data
 gc.collect()
 

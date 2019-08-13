@@ -18,6 +18,10 @@
   * [binary_class.py](./code/keras/binary_class.py):keras实现的mlp,做二分类任务
   * [multi_class.py](./code/keras/multi_class.py):keras实现的mlp,做多分类任务
   * [regression.py](./code/keras/regression.py):keras实现的mlp,做回归任务
+* pytorch实现的mlp
+  * [binary_class.py](./code/pytorch/binary_class.py):pytorch实现的mlp,做二分类任务
+  * [multi_class.py](./code/pytorch/multi_class.py):pytorch实现的mlp,做多分类任务
+  * [regression.py](./code/pytorch/regression.py):实现的mlp,做回归任务
 
 ## 2.环境设置
 
@@ -30,6 +34,7 @@ matplotlib
 sklearn
 tensorflow==1.12.0
 keras==2.2.4
+pytorch
 seaborn
 lightgbm==2.2.1
 xgboost==0.90
@@ -40,14 +45,15 @@ xgboost==0.90
 * [基于lightgbm实现的二分类、多分类和回归任务](https://mp.weixin.qq.com/s/t6EpWmLWP81DcJ7AUro3Ng)
 * [基于xgboost实现的二分类、多分类和回归任务]()
 * [基于keras实现的二分类、多分类和回归任务]()
+* [基于pytorch实现的二分类、多分类和回归任务]()
 
 ## 4. 最后
 
-目前只整理了几个常用的模型，下一步会将用到的不错的代码同步进来，如果有什么问题可以直接指出来，大家一块进步，如果对您有帮助，麻烦点击一下star,鼓励一下作者。如果有最新内容更新会第一时间在微信公众号公布，希望能和大家一块成长。
+目前只整理了几个常用的模型，下一步会将用到的不错的代码同步进来，如果有问题或者发现有什么错误的地方需要交流可以通过微信公众号或者代码中的邮箱联系作者，也可以通过Issues提出问题。如果该项目对你有帮助，麻烦点击一下star，鼓励一下作者。如果有最新内容更新会第一时间在微信公众号内发布，希望能和你一起在AI方面前进，成长。
 
-作者的知乎：[QLMX](https://www.zhihu.com/people/qlmx-61/activities)
+作者的知乎：[QLMX](https://www.zhihu.com/people/qlmx-61/activities), 知乎专栏：[ML与DL成长之路](https://zhuanlan.zhihu.com/c_1138029910563020800)
 
-微信公号：AI成长社![wx](./result/wx.jpg)
+微信公号：AI成长社<img src="./result/wx.jpg" width = "80" height = "80" />
 
 
 

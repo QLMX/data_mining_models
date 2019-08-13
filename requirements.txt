@@ -1,6 +1,7 @@
 pandas
 numpy
 matplotlib
+pytorch
 sklearn
 keras==2.2.4
 seaborn
