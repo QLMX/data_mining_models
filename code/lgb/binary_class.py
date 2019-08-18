@@ -46,7 +46,6 @@ train_x = train[features]
 train_y = train['label'].values
 test = test[features]
 
-
 params = {'num_leaves': 60,
           'min_data_in_leaf': 30,
           'objective': 'binary',
@@ -86,6 +85,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train)):
                     num_round,
                     valid_sets=[trn_data, val_data],
                     verbose_eval=20,
+                    categorical_feature=cate_feature,
                     early_stopping_rounds=60)
     prob_oof[val_idx] = clf.predict(train_x.iloc[val_idx], num_iteration=clf.best_iteration)
 
@@ -102,7 +102,7 @@ for pred in test_pred_prob:
     result = 1 if pred > threshold else 0
 
 ## plot feature importance
-cols = (feature_importance_df[["Feature", "importance"]].groupby("Feature").mean().sort_values(by="importance", ascending=False).index)
+cols = (feature_importance_df[["Feature", "importance"]].groupby("Feature").mean().sort_values(by="importance", ascending=False)[:5].index)
 best_features = feature_importance_df.loc[feature_importance_df.Feature.isin(cols)].sort_values(by='importance',ascending=False)
 plt.figure(figsize=(8, 10))
 sns.barplot(y="Feature",

@@ -128,7 +128,7 @@ for fold_, (trn_, val_) in enumerate(folds.split(train_x)):
     x_valid, y_valid = train_X[val_], train_y[val_]
 
 
-    model = MLP(dropout_rate=0.5, activation='tanh')
+    model = MLP(dropout_rate=0.5, activation='relu')
     model.compile(optimizer='adam', loss='binary_crossentropy',  metrics=['accuracy'])
     history = model.fit(x_train, y_train,
                         validation_data=[x_valid, y_valid],

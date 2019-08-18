@@ -108,6 +108,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train)):
                     # feval=lambda preds, train_data: weight_loss(preds, train_data),
                     feval=cuntom_loss,
                     verbose_eval=20,
+                    categorical_feature=cate_feature,
                     early_stopping_rounds=60)
     prob_oof[val_idx] = clf.predict(train_x.iloc[val_idx], num_iteration=clf.best_iteration)
 

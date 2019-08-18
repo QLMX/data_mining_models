@@ -57,7 +57,7 @@ params = {
     'gamma': 0.1,
     'max_depth': 8,
     'alpha': 0,
-    'lambda': 10,
+    'lambda': 0,
     'subsample': 0.7,
     'colsample_bytree': 0.5,
     'min_child_weight': 3,

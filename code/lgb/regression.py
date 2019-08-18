@@ -94,6 +94,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train_x)):
                     num_round,
                     valid_sets=[trn_data, val_data],
                     verbose_eval=200,
+                    categorical_feature=cate_feature,
                     early_stopping_rounds=200)
     oof[val_idx] = clf.predict(train_x.iloc[val_idx], num_iteration=clf.best_iteration)
 

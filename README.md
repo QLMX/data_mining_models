@@ -43,7 +43,7 @@ xgboost==0.90
 ## 3. 代码讲解
 
 * [基于lightgbm实现的二分类、多分类和回归任务](https://mp.weixin.qq.com/s/t6EpWmLWP81DcJ7AUro3Ng)
-* [基于xgboost实现的二分类、多分类和回归任务]()
+* [基于xgboost实现的二分类、多分类和回归任务](https://mp.weixin.qq.com/s/Td0Vrx9YO5rEn66L4C42Zw)
 * [基于keras实现的二分类、多分类和回归任务]()
 * [基于pytorch实现的二分类、多分类和回归任务]()
 
