@@ -45,7 +45,7 @@ xgboost==0.90
 * [基于lightgbm实现的二分类、多分类和回归任务](https://mp.weixin.qq.com/s/t6EpWmLWP81DcJ7AUro3Ng)
 * [基于xgboost实现的二分类、多分类和回归任务](https://mp.weixin.qq.com/s/Td0Vrx9YO5rEn66L4C42Zw)
 * [基于keras实现的二分类、多分类和回归任务](https://mp.weixin.qq.com/s/XaB1BsLL_Va7dGL0S0rUOQ)
-* [基于pytorch实现的二分类、多分类和回归任务]()
+* [基于pytorch实现的二分类、多分类和回归任务](https://zhuanlan.zhihu.com/p/80381974)
 
 ## 4. 最后
 
