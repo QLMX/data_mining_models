@@ -51,7 +51,7 @@ xgboost==0.90
 
 目前只整理了几个常用的模型，下一步会将用到的不错的代码同步进来，如果有问题或者发现有什么错误的地方需要交流可以通过微信公众号或者代码中的邮箱联系作者，也可以通过Issues提出问题。如果该项目对你有帮助，麻烦点击一下star，鼓励一下作者。如果有最新内容更新会第一时间在微信公众号内发布，希望能和你一起在AI方面前进，成长。
 
-作者的知乎：[QLMX](https://www.zhihu.com/people/qlmx-61/activities), 知乎专栏：[ML与DL成长之路](https://zhuanlan.zhihu.com/c_1138029910563020800)
+作者的知乎：[一休](https://www.zhihu.com/people/qlmx-61/activities), 知乎专栏：[ML与DL成长之路](https://zhuanlan.zhihu.com/c_1138029910563020800)
 
 微信公号：AI成长社<img src="./result/wx.jpg" width = "80" height = "80" />
 
