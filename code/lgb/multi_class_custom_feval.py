@@ -83,7 +83,7 @@ def custom_fun(preds, labels):
     return result
 
 
-def cuntom_feval(preds, train_data):
+def custom_feval(preds, train_data):
     #reference : https://github.com/microsoft/LightGBM/blob/master/examples/python-guide/advanced_example.py
     labels = train_data.get_label()
     preds = np.reshape(preds, (len(labels), -1), order='F')
@@ -106,7 +106,7 @@ for fold_, (trn_idx, val_idx) in enumerate(folds.split(train)):
                     num_round,
                     valid_sets=[trn_data, val_data],
                     # feval=lambda preds, train_data: weight_loss(preds, train_data),
-                    feval=cuntom_feval,
+                    feval=custom_feval,
                     verbose_eval=20,
                     categorical_feature=cate_feature,
                     early_stopping_rounds=60)
