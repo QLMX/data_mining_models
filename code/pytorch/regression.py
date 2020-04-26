@@ -2,7 +2,7 @@
 #-*- coding:utf-8 _*- 
 """
 @version: python3.6
-@author: ikkyu-wen
+@author: QLMX
 @contact: wenruichn@gmail.com
 @time: 2019-08-08 13:35
 公众号：AI成长社
