@@ -3,7 +3,7 @@ numpy
 matplotlib
 pytorch
 sklearn
-keras==2.2.4
+keras==2.13.1
 seaborn
 lightgbm==2.2.1
 xgboost==0.90
